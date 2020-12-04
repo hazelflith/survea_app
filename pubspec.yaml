@@ -72,13 +72,14 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
 
   assets:
-   - images/
+   - assets/image/login/background_login.png
+   - assets/image/login/waves.png
 
   fonts:
     - family: Open Sans
       fonts:
-        - asset: fonts/OpenSans-Regular.ttf
-        - asset: fonts/OpenSans-Bold.ttf
+        - asset: assets/fonts/OpenSans-Regular.ttf
+        - asset: assets/fonts/OpenSans-Bold.ttf
           weight: 700
-        - asset: fonts/OpenSans-SemiBold.ttf
+        - asset: assets/fonts/OpenSans-SemiBold.ttf
           weight: 600
