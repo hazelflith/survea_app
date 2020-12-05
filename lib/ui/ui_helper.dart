@@ -19,7 +19,7 @@ class UIHelper {
   static double _smallSpace = 12;
   static double _mediumSpace = 30;
   static double _largeSpace = 80;
-  static double _extraLargeSpace = 120;
+  static double _extraLargeSpace = 110;
 
   static void init(BuildContext context) {
     _mediaQueryData = MediaQuery.of(context);
@@ -55,6 +55,8 @@ class UIHelper {
   static Color blueTosca = Color(0xFF53D2DB);
   static Color pink = Color(0xFFFF826E);
   static Color orange = Color(0xFFFFC05F);
+  static Color grayText = Color(0xFF606060);
+  static Color surveaBlue = Color(0xFF334D6E);
 
   static MaterialColor createMaterialColor(Color color) {
     List strengths = <double>[.05];

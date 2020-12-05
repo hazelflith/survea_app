@@ -33,14 +33,22 @@ class MyApp extends StatelessWidget {
 
 final globalTextTheme = TextTheme(
   display2: TextStyle(
-      fontFamily: 'Open Sans',
-      fontSize: 16,
-      fontWeight: FontWeight.w400,
+      fontFamily: 'Poppins',
+      fontSize: 14,
+      fontWeight: FontWeight.w200,
       color: Colors.black),
   display1: TextStyle(
-    fontFamily: 'Open Sans',
-    fontSize: 16,
-    fontWeight: FontWeight.w600,
+    height: 1.2,
+    fontFamily: 'Poppins',
+    fontSize: 28,
+    fontWeight: FontWeight.w400,
+    color: Colors.black,
+  ),
+  display3: TextStyle(
+    height: 1.2,
+    fontFamily: 'Poppins',
+    fontSize: 13,
+    fontWeight: FontWeight.w200,
     color: Colors.white,
   ),
   title: TextStyle(
