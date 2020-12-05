@@ -6,26 +6,25 @@ class Login extends StatelessWidget {
       return MaterialApp(
         title: 'Welcome to Flutter',
         home: Container(
-          decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage("assets/image/background_login.png"), fit: BoxFit.cover)),
-          child: Scaffold(
-            backgroundColor: Colors.transparent,
-            appBar: AppBar(
-              elevation: 0,
-              backgroundColor: Colors.transparent,
-              title: Text('My App'),
-              centerTitle: true,
-              leading: IconButton(
-                  icon: Icon(
-                    Icons.list,
-                    color: Colors.white,
+                  alignment: Alignment.topLeft,
+                  image: AssetImage('assets/image/login/bg.png'),
+                  fit: BoxFit.scaleDown),
+    ),
+                  foregroundDecoration: const BoxDecoration(
+                  image: DecorationImage(
+                  alignment: Alignment(0, .35),
+                  image: AssetImage(
+                  'assets/image/login/waves.png'),
                   ),
-                  onPressed: () {}),
             ),
-          ),
-        ),
-      );
+            child: Text('Welcome',
+                style : TextStyle(fontSize:28.0, fontWeight:FontWeight.normal ,color: Colors.black87))
+
+
+        )
+        );
     }
   }
 
