@@ -5,26 +5,23 @@ class Login extends StatelessWidget {
   Widget build(BuildContext context) {
       return MaterialApp(
         title: 'Welcome to Flutter',
-        home: Container(
-            decoration: const BoxDecoration(
-              image: DecorationImage(
-                  alignment: Alignment.topLeft,
-                  image: AssetImage('assets/image/login/bg.png'),
-                  fit: BoxFit.scaleDown),
-    ),
-                  foregroundDecoration: const BoxDecoration(
-                  image: DecorationImage(
-                  alignment: Alignment(0, .35),
+        home: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: <Widget>[
+            Container(
+              height: 692,
+              width: 375,
+              decoration: BoxDecoration(
+                image: DecorationImage(
                   image: AssetImage(
-                  'assets/image/login/waves.png'),
-                  ),
-            ),
-            child: Text('Welcome',
-                style : TextStyle(fontSize:28.0, fontWeight:FontWeight.normal ,color: Colors.black87))
+                      'assets/image/login/bg.png'),
+                  fit: BoxFit.fitWidth,
+                ),
+              ),
+            )
 
-
-        )
-        );
+          ],),
+      );
     }
   }
 
