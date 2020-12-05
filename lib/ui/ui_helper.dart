@@ -15,7 +15,7 @@ class UIHelper {
   static double safeBlockHorizontal;
   static double safeBlockVertical;
 
-  static double _extraSmallSpace = 9;
+  static double _extraSmallSpace = 8;
   static double _smallSpace = 12;
   static double _mediumSpace = 30;
   static double _largeSpace = 80;

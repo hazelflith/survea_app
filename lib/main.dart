@@ -41,7 +41,7 @@ final globalTextTheme = TextTheme(
     height: 1.2,
     fontFamily: 'Poppins',
     fontSize: 28,
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeight.w500,
     color: Colors.black,
   ),
   display3: TextStyle(

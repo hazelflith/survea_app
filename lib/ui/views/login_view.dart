@@ -9,20 +9,23 @@ class Login extends StatelessWidget {
         body: SafeArea(
           child : Container(
             child : Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.symmetric(vertical :10.0,horizontal: 25.0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  UIHelper.vSpaceXLarge(),UIHelper.vSpaceXLarge(),UIHelper.vSpaceXLarge(),
+                  UIHelper.vSpaceXLarge(),UIHelper.vSpaceXLarge(),UIHelper.vSpaceXLarge(),UIHelper.vSpaceXSmall(),UIHelper.vSpaceXSmall(),
                   Text('Welcome',
                   style : Theme.of(context).textTheme.display1
                   ),
                   Text('To Survea !',
                       style : Theme.of(context).textTheme.display1
                   ),
-                  Text('Sign In',
-                      style : Theme.of(context).textTheme.display2.copyWith(color: UIHelper.grayText)
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 0.0, horizontal: 2.0),
+                    child: Text('Sign In',
+                        style : Theme.of(context).textTheme.display2.copyWith(color: UIHelper.grayText)
+                    ),
                   ),
               TextFormField(
                 decoration: InputDecoration(
