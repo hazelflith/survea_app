@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:kema_unpad/ui/shared/custom_app_bar.dart';
-import 'package:kema_unpad/ui/ui_helper.dart';
+import 'package:survea_app/ui/shared/custom_app_bar.dart';
+import 'package:survea_app/ui/ui_helper.dart';
 
 class HomeAppBar extends StatelessWidget {
   const HomeAppBar({

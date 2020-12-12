@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../ui_helper.dart';
-
 class JelajahKampusList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
