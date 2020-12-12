@@ -17,6 +17,14 @@ environment:
   sdk: ">=2.1.0 <3.0.0"
 
 dependencies:
+  flutter_svg: any
+  google_fonts: any
+  font_awesome_flutter: any
+  stacked: any
+  webview_flutter: any
+  get_it: any
+  dio: any
+  carousel_slider: ^2.3.1
   flutter:
     sdk: flutter
 
@@ -43,6 +51,13 @@ flutter:
   assets:
     - assets/image/login/bg.png
     - assets/image/register/bg.png
+    - assets/image/home/box1.png
+    - assets/image/home/box2.png
+    - assets/image/home/box3.png
+    - assets/image/home/wallet1.png
+    - assets/image/home/survey1.png
+    - assets/image/home/survey2.png
+    - assets/image/home/bg.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
