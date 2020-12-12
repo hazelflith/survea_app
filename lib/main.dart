@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         ),
         textTheme: globalTextTheme,
       ),
-      home: Register(),
+      home: Home(),
     );
   }
 }
