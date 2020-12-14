@@ -6,7 +6,8 @@ class HomeAppBar extends StatelessWidget {
   const HomeAppBar({
     Key key,
     @required GlobalKey<ScaffoldState> scaffoldKey,
-  }) : _scaffoldKey = scaffoldKey, super(key: key);
+  })  : _scaffoldKey = scaffoldKey,
+        super(key: key);
 
   final GlobalKey<ScaffoldState> _scaffoldKey;
 
@@ -15,34 +16,20 @@ class HomeAppBar extends StatelessWidget {
     return CustomAppBar(
       scaffoldKey: _scaffoldKey,
       alignment: MainAxisAlignment.spaceBetween,
-      info: Row(
-        children: <Widget>[
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.end,
-            children: <Widget>[
-              UIHelper.vSpaceSmall(),
-              Text(
-                "Selamat Datang",
-                style: Theme.of(context).textTheme.title,
-              ),
-              Text(
-                "Kema!",
-                style: Theme.of(context).textTheme.display2,
-              )
-            ],
-          ),
-          Column(
-            children: <Widget>[
-              UIHelper.vSpaceXSmall(),
-              UIHelper.vSpaceXSmall(),
-              Image.asset(
-                "images/logo_kumobile.png",
-                width: 45.0,
-                height: 45.0,
-              )
-            ],
-          ),
-        ],
+      iconColor: UIHelper.surveaGreen,
+      info: Padding(
+        padding: const EdgeInsets.only(right: 8),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: <Widget>[
+            // UIHelper.vSpaceSmall(),
+            Text("survea",
+                style: TextStyle(
+                    fontFamily: 'Poppins',
+                    color: UIHelper.surveaGreen,
+                    fontSize: 24))
+          ],
+        ),
       ),
     );
   }

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget {
-  CustomAppBar({this.scaffoldKey, this.info, this.alignment});
+  CustomAppBar({this.scaffoldKey, this.info, this.iconColor, this.alignment});
   final GlobalKey<ScaffoldState> scaffoldKey;
   final Widget info;
+  final Color iconColor;
   final MainAxisAlignment alignment;
 
   @override
@@ -16,9 +17,18 @@ class CustomAppBar extends StatelessWidget {
           child: Icon(
             Icons.short_text,
             size: 50.0,
+            color: iconColor,
           ),
         ),
-        info
+        info,
+        GestureDetector(
+          onTap: () => scaffoldKey.currentState.openDrawer(),
+          child: Icon(
+            Icons.notifications,
+            size: 30.0,
+            color: iconColor,
+          ),
+        )
       ],
     );
   }

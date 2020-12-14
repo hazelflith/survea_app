@@ -6,6 +6,8 @@ import 'package:survea_app/ui/router.dart';
 import 'package:survea_app/ui/ui_helper.dart';
 import 'package:survea_app/ui/views/all_views.dart';
 
+import 'ui/views/all_views.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
@@ -26,7 +28,7 @@ class MyApp extends StatelessWidget {
         ),
         textTheme: globalTextTheme,
       ),
-      home: Home(),
+      home: SurveyList(),
     );
   }
 }
