@@ -44,11 +44,11 @@ class _HomeState extends State<Home> {
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 20.0),
                   ),
-                  UIHelper.vSpaceMedium(),
+                  UIHelper.vSpaceSmall(),
                   Container(
                     child: Padding(
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 20.0, vertical: 15.0),
+                          horizontal: 20.0, vertical: 0.0),
                       child: Column(
                           mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.start,
