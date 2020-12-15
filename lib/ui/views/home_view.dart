@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:survea_app/ui/ui_helper.dart';
+import 'package:survea_app/ui/widgets/appbar/home_appbar.dart';
 import 'package:survea_app/ui/widgets/appbar/menu_drawer.dart';
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
+  @override
+  _HomeState createState() => _HomeState();
+}
+class _HomeState extends State<Home>{
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+  ScrollController controller;
   @override
   Widget build(BuildContext context) {
     UIHelper.init(context);
@@ -21,6 +28,13 @@ class Home extends StatelessWidget {
         child: ListView(
           // crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
+            Container(
+              color: UIHelper.surveaBlue,
+              child: Padding(
+                padding: EdgeInsets.fromLTRB(20, 10, 20, 15),
+                child: HomeAppBar(scaffoldKey: _scaffoldKey),
+              ),
+            ),
           UIHelper.vSpaceSmall(),
           Padding(
           padding: EdgeInsets.symmetric(horizontal: 20.0),

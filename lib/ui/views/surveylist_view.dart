@@ -17,11 +17,21 @@ class _SurveyListState extends State<SurveyList> {
   Widget build(BuildContext context) {
     UIHelper.init(context);
     return Scaffold(
+
         drawer: MenuDrawer(),
         key: _scaffoldKey,
         body: SafeArea(
             child: ListView(
           children: <Widget>[
+            Container(
+            decoration: BoxDecoration(
+            image: DecorationImage(
+            image: AssetImage(
+            'assets/image/home/bg.png'),
+          fit: BoxFit.fill,
+        ),
+    )
+    ),
             Container(
               color: UIHelper.surveaBlue,
               child: Padding(
