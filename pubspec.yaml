@@ -63,6 +63,8 @@ flutter:
     - assets/image/survey/cat_politic.png
     - assets/image/survey/cat_social.png
     - assets/image/survey/cat_tech.png
+    - assets/image/menubar/pp.png
+    - assets/image/menubar/bg.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -22,38 +22,38 @@ class _SurveyListState extends State<SurveyList> {
         key: _scaffoldKey,
         body: SafeArea(
             child: ListView(
-          children: <Widget>[
-            Container(
-            decoration: BoxDecoration(
-            image: DecorationImage(
-            image: AssetImage(
-            'assets/image/home/bg.png'),
-          fit: BoxFit.fill,
-        ),
-    )
-    ),
-            Container(
-              color: UIHelper.surveaBlue,
-              child: Padding(
-                padding: EdgeInsets.fromLTRB(20, 10, 20, 15),
-                child: HomeAppBar(scaffoldKey: _scaffoldKey),
+              children: <Widget>[
+              Container(
+                decoration: BoxDecoration(
+                image: DecorationImage(
+                image: AssetImage(
+                'assets/image/home/bg.png'),
+                fit: BoxFit.fill,
+                  ),
+                )
               ),
-            ),
-            UIHelper.vSpaceMedium(),
-            Container(
-              child: Padding(
-                padding: const EdgeInsets.symmetric(
-                    horizontal: 20.0, vertical: 15.0),
-                child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Text('Available Survey',
-                          style: Theme.of(context).textTheme.display1),
-                    ]),
+              Container(
+                color: UIHelper.surveaBlue,
+                child: Padding(
+                  padding: EdgeInsets.fromLTRB(20, 10, 20, 15),
+                  child: HomeAppBar(scaffoldKey: _scaffoldKey),
+                ),
               ),
-            ),
-            _horizontalListView1(),
+              UIHelper.vSpaceMedium(),
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 20.0, vertical: 15.0),
+                  child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text('Available Survey',
+                            style: Theme.of(context).textTheme.display1),
+                      ]),
+                ),
+              ),
+              _horizontalListView1(),
           ],
         )));
   }

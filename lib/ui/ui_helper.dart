@@ -57,7 +57,7 @@ class UIHelper {
   static Color orange = Color(0xFFFFC05F);
   static Color grayText = Color(0xFF606060);
   static Color surveaBlue = Color(0xFF334D6E);
-  static Color surveaGreen = Color(0xFF8BD8BD);
+  static Color surveaGreen = Color(0xFF8CD8BE);
 
   static MaterialColor createMaterialColor(Color color) {
     List strengths = <double>[.05];
