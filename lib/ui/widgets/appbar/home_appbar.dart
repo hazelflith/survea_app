@@ -23,7 +23,7 @@ class HomeAppBar extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.end,
           children: <Widget>[
             // UIHelper.vSpaceSmall(),
-            Text("survea",
+            Text("",
                 style: TextStyle(
                     fontFamily: 'Poppins',
                     color: UIHelper.surveaGreen,

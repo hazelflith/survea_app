@@ -17,50 +17,52 @@ class _SurveyListState extends State<SurveyList> {
   Widget build(BuildContext context) {
     UIHelper.init(context);
     return Scaffold(
-
         drawer: MenuDrawer(),
         key: _scaffoldKey,
         body: SafeArea(
             child: ListView(
-              children: <Widget>[
-              Container(
+          children: <Widget>[
+            Container(
                 decoration: BoxDecoration(
-                image: DecorationImage(
-                image: AssetImage(
-                'assets/image/home/bg.png'),
+              image: DecorationImage(
+                image: AssetImage('assets/image/home/bg.png'),
                 fit: BoxFit.fill,
-                  ),
-                )
               ),
-              Container(
-                color: UIHelper.surveaBlue,
-                child: Padding(
-                  padding: EdgeInsets.fromLTRB(20, 10, 20, 15),
-                  child: HomeAppBar(scaffoldKey: _scaffoldKey),
+            )),
+            Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/image/menubar/app_bar.png'),
+                  fit: BoxFit.fill,
                 ),
               ),
-              UIHelper.vSpaceMedium(),
-              Container(
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(
-                      horizontal: 20.0, vertical: 15.0),
-                  child: Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Text('Available Survey',
-                            style: Theme.of(context).textTheme.display1),
-                      ]),
-                ),
+              child: Padding(
+                padding: EdgeInsets.fromLTRB(20, 10, 20, 15),
+                child: HomeAppBar(scaffoldKey: _scaffoldKey),
               ),
-              _horizontalListView1(),
+            ),
+            UIHelper.vSpaceMedium(),
+            Container(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(
+                    horizontal: 20.0, vertical: 15.0),
+                child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Text('Available Survey',
+                          style: Theme.of(context).textTheme.display1),
+                    ]),
+              ),
+            ),
+            _horizontalListView1(),
           ],
         )));
   }
 
   Widget _horizontalListView1() {
     return SizedBox(
-      height: 200,
+      height: 75,
       child: Padding(
         padding: const EdgeInsets.only(left: 10.0),
         child: ListView(

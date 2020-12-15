@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:survea_app/ui/widgets/appbar/menu_drawer.dart';
 
 class CustomAppBar extends StatelessWidget {
   CustomAppBar({this.scaffoldKey, this.info, this.iconColor, this.alignment});
@@ -22,7 +23,7 @@ class CustomAppBar extends StatelessWidget {
         ),
         info,
         GestureDetector(
-          onTap: () => scaffoldKey.currentState.openDrawer(),
+          // onTap: () => scaffoldKey.currentState.openDrawer(),
           child: Icon(
             Icons.notifications,
             size: 30.0,
