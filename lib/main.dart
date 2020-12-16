@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         ),
         textTheme: globalTextTheme,
       ),
-      home: SurveyList(),
+      home: Login(),
     );
   }
 }

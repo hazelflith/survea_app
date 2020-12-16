@@ -17,6 +17,7 @@ environment:
   sdk: ">=2.1.0 <3.0.0"
 
 dependencies:
+  dependencies:
   flutter_svg: any
   google_fonts: any
   font_awesome_flutter: any
