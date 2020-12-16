@@ -15,6 +15,8 @@ class Router {
         return MaterialPageRoute(builder: (_) => Survey());
       case 'surveylist':
         return MaterialPageRoute(builder: (_) => SurveyList());
+      case 'surveycreate':
+        return MaterialPageRoute(builder: (_) => SurveyCreate());
       default:
         return MaterialPageRoute(builder: (_) {
           return Scaffold(

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:survea_app/ui/ui_helper.dart';
 import 'package:survea_app/ui/widgets/appbar/home_appbar.dart';
 import 'package:survea_app/ui/widgets/appbar/menu_drawer.dart';
-import 'package:survea_app/ui/widgets/surveycat_list.dart';
 
 class SurveyList extends StatefulWidget {
   @override
@@ -16,48 +15,111 @@ class _SurveyListState extends State<SurveyList> {
   @override
   Widget build(BuildContext context) {
     UIHelper.init(context);
-    return Scaffold(
-        drawer: MenuDrawer(),
-        key: _scaffoldKey,
-        body: SafeArea(
-            child: ListView(
-          children: <Widget>[
-            Container(
-                decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/image/home/bg.png'),
-                fit: BoxFit.fill,
-              ),
-            )),
-            Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/image/menubar/app_bar.png'),
-                  fit: BoxFit.fill,
+    return Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/image/home/bg.png'),
+            fit: BoxFit.fill,
+          ),
+        ),
+        child: Scaffold(
+            backgroundColor: Colors.transparent,
+            drawer: MenuDrawer(),
+            key: _scaffoldKey,
+            body: SafeArea(
+              child: ListView(children: <Widget>[
+                Container(
+                    decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('assets/image/home/bg.png'),
+                    fit: BoxFit.fill,
+                  ),
+                )),
+                Container(
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage('assets/image/menubar/app_bar.png'),
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                  child: Padding(
+                    padding: EdgeInsets.fromLTRB(20, 10, 20, 15),
+                    child: HomeAppBar(scaffoldKey: _scaffoldKey),
+                  ),
                 ),
-              ),
-              child: Padding(
-                padding: EdgeInsets.fromLTRB(20, 10, 20, 15),
-                child: HomeAppBar(scaffoldKey: _scaffoldKey),
-              ),
-            ),
-            UIHelper.vSpaceMedium(),
-            Container(
-              child: Padding(
-                padding: const EdgeInsets.symmetric(
-                    horizontal: 20.0, vertical: 15.0),
-                child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Text('Available Survey',
-                          style: Theme.of(context).textTheme.display1),
-                    ]),
-              ),
-            ),
-            _horizontalListView1(),
-          ],
-        )));
+                UIHelper.vSpaceSmall(),
+                Container(
+                  child: Padding(
+                    padding: const EdgeInsets.only(
+                        left: 15.0, right: 15.0, bottom: 15.0, top: 5.0),
+                    child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text('Available Survey',
+                              style: Theme.of(context).textTheme.display1),
+                        ]),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(
+                      bottom: 15.0, left: 15.0, right: 18.0),
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                        contentPadding: new EdgeInsets.symmetric(
+                            vertical: 5.0, horizontal: 10.0),
+                        labelText: 'Search',
+                        border: OutlineInputBorder()),
+                  ),
+                ),
+                Container(
+                  child: Padding(
+                    padding: const EdgeInsets.only(
+                        left: 18.0, right: 15.0, bottom: 5.0, top: 0.0),
+                    child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text('Category',
+                              style: Theme.of(context).textTheme.display2),
+                        ]),
+                  ),
+                ),
+                _horizontalListView1(),
+                Padding(
+                  padding: const EdgeInsets.only(right: 0.0, bottom: 0.0),
+                  child: SizedBox(
+                      height: 150,
+                      child: Image(
+                          image:
+                              AssetImage('assets/image/survey/survey1.png'))),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(right: 0.0),
+                  child: SizedBox(
+                      height: 150,
+                      child: Image(
+                          image:
+                              AssetImage('assets/image/survey/survey2.png'))),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(right: 0.0),
+                  child: SizedBox(
+                      height: 150,
+                      child: Image(
+                          image:
+                              AssetImage('assets/image/survey/survey3.png'))),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(right: 0.0),
+                  child: SizedBox(
+                      height: 150,
+                      child: Image(
+                          image:
+                              AssetImage('assets/image/survey/survey4.png'))),
+                ),
+              ]),
+            )));
   }
 
   Widget _horizontalListView1() {
